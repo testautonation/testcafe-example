@@ -4,5 +4,6 @@ export default class Page {
     	this.nameInput     = Selector('#developer-name');
 		this.submitButton  = Selector('#submit-button');
 		this.articleHeader = Selector('#article-header');
+		this.osOptions = Selector('#macos');
 	} 
 }

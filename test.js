@@ -12,3 +12,9 @@ test('My first test for the INPUT box', async t => {
         .click(page.submitButton)
         .expect(page.articleHeader.innerText).eql('Thank you, ' + myName + '!');
 });
+
+test('My second test for radio buttons', async t => {
+    await t
+        .click(page.osOptions)
+        .expect(page.osOptions.value).eql('MacOS');
+});
